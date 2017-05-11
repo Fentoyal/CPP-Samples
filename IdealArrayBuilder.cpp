@@ -1,5 +1,5 @@
 /******************************************************
-The idea was initially completely invented by myself during my large processing of volume images. This idea was not even inspired by others' work.
+The idea was initially completely invented by myself during my large processing of volume images. This idea was NOT even inspired by others' work.
 The implementation was completely done by myself too.
 
 This is a real dynamic multi-array that mimicks a traditional stack allocated array.
