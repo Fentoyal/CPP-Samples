@@ -1,3 +1,7 @@
+/******************************************************
+The idea was inspired by other work,
+but the implementation was completely done by myself
+***********************************/
 #include <vector>
 #include <algorithm>
 #include <iostream>

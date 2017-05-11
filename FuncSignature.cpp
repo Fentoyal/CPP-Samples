@@ -1,3 +1,7 @@
+/******************************************************
+The idea was inpired by other work.
+The implementation was completely done by myself independently
+***********************************/
 #include <iostream>
 #include <typeinfo>
 #include <cstdio>
