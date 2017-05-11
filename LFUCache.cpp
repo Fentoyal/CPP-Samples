@@ -1,3 +1,7 @@
+/*************************************
+This is a sample Least Frequently Used Cache that supports all operation in O(1)
+Very simple but it does work!
+*****************************/
 class LFUCache {
 	struct FrequencyNode;
 	struct RecencyNode { int key, value; list<FrequencyNode>::iterator iter; };
