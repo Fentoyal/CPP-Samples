@@ -1,13 +1,12 @@
 #include <iostream>
 #include <thread>
 #include <chrono>
-//Need Visual Studio 2012 to compile it correctly
 #include <condition_variable>
 #include <mutex>
 #include <algorithm>
 #include <memory>
 
-/*because VS2012 is not supporting C++11 well, some details may not be satisfactory,
+/*due to some complier issue at the moment some details may not be satisfactory,
 *e.g. noexcept specification for move constructor,
 *constexpr for capacity() method, member function reference qualifier for operator=(), etc.
 */
@@ -39,8 +38,8 @@ protected:
 	mutable mutex _mutex;
 	condition_variable _enq_cv;
 	condition_variable _deq_cv;
-	template<size_t N>
-	friend void swap(CircularQueue<N> & lhs, CircularQueue<N> & rhs);
+	template<size_t M>
+	friend void swap(CircularQueue<M> & lhs, CircularQueue<M> & rhs);
 public:
 	CircularQueue();
 	CircularQueue(const CircularQueue & to_copy );
