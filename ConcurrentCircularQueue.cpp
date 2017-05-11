@@ -1,3 +1,6 @@
+/******************************************************
+The idea was not mine, but the implementation was done by myself.
+**********************************/
 #include <iostream>
 #include <thread>
 #include <chrono>
