@@ -17,8 +17,8 @@ struct Func<Ret (Args...)>
     using FuncType =  Ret(Args ...) ;
     using RetType =  Ret;
     //Note, the * is unavoidable
-    //That's because int(int, int) is a function type, we can't pass this type.
-    //int (*) (int, int) is what we can past.
+    //That's because int(int, int) is a function type, we can't parse this type.
+    //int (*) (int, int) is what we can parse.
     //In fact, we can even declare (not define ) a function like this:
     //using ThreeI = int(int, int);
     //ThreeI f; //f is a function, not a pointer to function.
