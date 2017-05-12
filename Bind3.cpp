@@ -3,7 +3,7 @@ The idea was from Boost, after 3 hours digging of the code.
 But the implementation was done by myself alone.
 
 This is a lightweight bind function that can only bind 3 arguments.
-I created this so I don't need to depend on Boost for my project.
+I created this so I didn't need to depend on Boost for my project.
 **********************************/
 
 #include <tuple>
@@ -61,7 +61,7 @@ struct my_bind_3{
       {
          tuple<ArgList...> arg_list (args...); //As I mentioned, we need to store the argument list.
          // this is what I meant in my previous post:
-         //return  F(arg_list [bind_list[0]]£¬arg_list [bind_list[1]]£¬ arg_list [bind_list[2]], ¡­¡­ );
+         //return  F(arg_list [bind_list[0]]ï¼Œarg_list [bind_list[1]]ï¼Œ arg_list [bind_list[2]], â€¦â€¦ );
          //note that,  _t1, _t2, _t3 are, as a matter of fact now, bind_list[0], bind_list[1], bind_list[2];
 
           return (*_pf)( ArgMap<is_placeholder<T1>::value, T1, ArgList... >::arg_at(_t1, arg_list),
@@ -73,10 +73,10 @@ struct my_bind_3{
 
 
  template<class R, class F, class T1,class T2,class T3>
-my_bind_3<R,F,T1,T2,T3> bind_3(F fn, T1 arg1, T2 arg2, T3 arg3 ) //ÕâÀïÕâÃ´Ğ´
+my_bind_3<R,F,T1,T2,T3> bind_3(F fn, T1 arg1, T2 arg2, T3 arg3 ) //è¿™é‡Œè¿™ä¹ˆå†™
 {
 
-      return my_bind_3<R,F,T1,T2,T3>(fn, arg1, arg2, arg3); //ÕâÀïÕâÃ´Ğ´
+      return my_bind_3<R,F,T1,T2,T3>(fn, arg1, arg2, arg3); //è¿™é‡Œè¿™ä¹ˆå†™
 }
 
  void show(int i, int j, int k)
