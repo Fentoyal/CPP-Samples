@@ -1,7 +1,9 @@
 /******************************************************
 The idea was inspired by other work,
-but the implementation was completely done by myself
-***********************************/
+And the implementation was largely done by myself but also referenced some others work too.
+***********************************
+This is a class that can be two different types at the same time.
+*************************/
 #include <vector>
 #include <algorithm>
 #include <iostream>
