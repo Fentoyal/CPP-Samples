@@ -1,7 +1,9 @@
 /******************************************************
 The idea was initially completely invented by myself. This idea was not even inspired by others' work.
 The implementation was completely done by myself too.
-******************************************************/
+*****************************************************
+This program can translate a Romain number to an Arabic number in COMPILE time.
+*******************************************/
 
 #include <iostream>
 
