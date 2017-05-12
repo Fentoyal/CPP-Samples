@@ -1,6 +1,6 @@
 /************************************************************
 The idea was NOT invented by myself, but inspired by some people/article online.
-The implementation was done by myself.
+The implementation was largely done by myself with some help from internet.
 *******************************************
 Due to poor support for nameless recursive lambda in C++ 11, I created this one.
 Referenced a lot of ideas and reading materials online.
