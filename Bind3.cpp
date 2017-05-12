@@ -3,7 +3,8 @@ The idea was from Boost, after 3 hours digging of the code.
 But the implementation was done by myself alone.
 
 This is a lightweight bind function that can only bind 3 arguments.
-I created this so I didn't need to depend on Boost for my project.
+I reimplemented a bunch of functions from Boost, so my project didn't need to depend on Boost. 
+This is just one of them, but admittedly, the hardest one. 
 **********************************/
 
 #include <tuple>
